@@ -1,38 +1,250 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.App-header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.App-header-titles {
+  padding-left: 10vw;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5vw;
+}
+
+.App-header-title {
+  margin: 0;
+  padding: 5px 15px;
   color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-title-active {
+  margin: 0;
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #404040;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header-settings {
+  padding-right: 5vw;
+  cursor: pointer;
+}
+
+.App-money {
+  padding-top: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-money-balance {
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.App-money-currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.App-money-currency-change {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.App-money-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.App-money-account-balance {
+  margin: 0;
+  font-size: 20px;
+}
+
+.App-money-value {
+  margin: 0;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.App-money-actions {
+  padding-right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.App-chart-header {
+  padding: 5vh 0 2vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-chart-titles {
+  padding-left: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.App-chart-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.App-chart-title-text {
+  margin: 0;
+}
+
+.App-chart-color1 {
+  width: 10px;
+  height: 10px;
+  background-color: #73E2A3;
+  border-radius: 50%;
+}
+
+.App-chart-color2 {
+  width: 10px;
+  height: 10px;
+  background-color: #AAF0C4;
+  border-radius: 50%;
+}
+
+.App-chart-color3 {
+  width: 10px;
+  height: 10px;
+  background-color: #D3F8DF;
+  border-radius: 50%;
+}
+
+.App-chart-term {
+  padding-right: 5vw;
+}
+
+.App-recent-transactions-container {
+  margin: 5vh 0;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.App-recent-transactions-header {
+  padding: 3vh 2vw;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.App-recent-transactions-buttons {
+  padding: 2vh 2vw;
+  width: 90vw;
+  align-self: start;
+  border-bottom: 1px solid lightgrey;
+}
+
+.App-recent-transactions {
+  padding: 2vh 2vw;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.App-recent-transactions-values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.App-recent-transactions-title {
+  margin: 0;
+  font-size: 14px;
+  color: #667085;
+}
+
+.App-recent-transactions-title1 {
+  margin: 0;
+  width: 10vw;
+  font-size: 14px;
+  color: #667085;
+}
+
+.App-recent-transactions-title2 {
+  margin: 0;
+  width: 13vw;
+  font-size: 14px;
+  color: #667085;
+}
+
+.App-recent-transactions-title3 {
+  margin: 0;
+  width: 15vw;
+  font-size: 14px;
+  color: #667085;
+}
+
+.App-recent-transactions-value {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.App-recent-transactions-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.App-recent-transactions-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.App-recent-transactions-last {
+  padding: 2vh 2vw;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
